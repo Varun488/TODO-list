@@ -1,0 +1,60 @@
+*{
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form{
+    font-size: large;
+}
+.form input{
+    width: 500px;
+}
+#create{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 500;
+}
+#delete{
+    text-decoration: none;
+    background-color: red;
+    color:white;
+    padding: 5px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 500;
+}
+.cards {
+    border:1px solid lightslategrey;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sub-cards2{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    align-items: center;
+}
+.sub-cards2 p{
+    background-color: green;
+    padding: 7px;
+    font: 500;
+    font-size: medium;
+    color: white;
+}
+.sub-cards2 a{
+    background-color: black;
+    color: white;
+    padding:7px;
+    font-size: medium;
+    text-decoration: none;
+}

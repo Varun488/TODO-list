@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>TODO List</title>
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+    <body>
+        <h1>TODO APP</h1><hr>
+        <div class="form">
+        <form action="/add-list" method="post">
+        <label for="taskedesc">Description</label><br>
+        <input type="text" name="taskdesc" placeholder="What do you need to do?"><br>
+        <label for="category">Category</label><br>
+
+        <select name="category" id="category"><br>
+        <option value="Personal">Personal</option>
+        <option value="Work">Work</option>
+        <option value="School">School</option>
+        <option value="Home">Home</option>
+        <option value="Other">Other</option>
+        </select>
+        <label for="Duedate">Due Date</label><br>
+        <input type="date" name="Duedate" id="Duedate"><br>
+        <button type="submit" id="create">Add Task</button>
+        </form>
+    </div>
+        <a href="/delete" id="delete">Delete task</a>
+        <hr>
+        <ul>
+            <div class="cards">
+            <% for(let i of Task_list) {%>
+                <div class="sub-card">
+                <p><%= i.Task%></p>
+                <p><%= i.Date%></p>
+            </div>
+            <div class="sub-cards2">
+                <p><%= i.Category%></p>
+               
+                <a href="/Done/?id=<%= i._id%>">Mark as Done</a>
+            </div>
+            <%}%>
+        </div>
+        </ul>
+    
+    </body>
+</html>
